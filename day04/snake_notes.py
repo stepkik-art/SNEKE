@@ -49,7 +49,7 @@ title_rect.center = (WINDOW_WIDTH // 2,
 # TODO: make a game_over_rect object by assigning game_over_text.get_rect() to it.
 # TODO: place the center of game_over_rect to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT
 
-# TODO: make a continue_text  object and assign a font render to it with text "Press any key to play again", antialias of True, color of RED, background color of DARKGREEN
+# TODO: make a continue_text  object and assign a font render to it with t  ext "Press any key to play again", antialias of True, color of RED, background color of DARKGREEN
 # TODO: make a continue_rect  object by assigning continue_text.get_rect() to it.
 # TODO: place the center of continue_rect  to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT + 64
 
@@ -83,7 +83,7 @@ while running:
                 # TODO: assign 0 'TO' snake_dy.  We may have been moving up or down.  This cancels that movement out.
             # TODO: check if the event.key is pygame.K_RIGHT.
                 # Inside the block of the K_RIGHT if statement.
-                # TODO: assign SNAKE_SIZE 'TO' snake_dx.  This moves the snake 1 SNAKE_SIZE to the right.
+                # TODO: assign SNAKE_SIZE 'TO' snake_dx.  This moves the snake 1 SNAKE_ SIZE to the right.
                 # TODO: assign 0 'TO' snake_dy.  We may have been moving up or down.  This cancels that movement out.
             # TODO: check if the event.key is pygame.K_UP.
                 # Inside the block of the K_UP if statement.
@@ -148,7 +148,7 @@ while running:
     # TODO: Read below.  2 TODO's, require's explanation
     '''
     Calling pygame.draw.rect is a way to blit rectangles.  
-    The blit function for display_surface is for direct blitting.  
+    The blit function for display_surface is for direct biting.  
     2 ways to do similar things.  Update the display
     1. "Call pygame.draw.rect and passing in display_surface, GREEN, and head_coord for the head of the snake
     2. "Call pygame.draw.rct again pass in display_surface, RED, and apple_coord for the apple.  

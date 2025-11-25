@@ -107,7 +107,8 @@ while running:
     # TODO: reassign (head_x, head_y, SNAKE_SIZE, SNAKE_SIZE) 'TO' head_coord
 
     # Check for game over
-    if head_rect.left < 0 or head_rect.right > WINDOW_WIDTH or head_rect.top < 0 or head_rect.bottom > WINDOW_HEIGHT or head_coord in body_coords:
+
+   if head_rect.left < 0 or head_rect.right > WINDOW_WIDTH or head_rect.top < 0 or head_rect.bottom > WINDOW_HEIGHT or head_coord in body_coords:
         # TODO: call display_surface's blit function passing in game_over_text and game_over_rect
         # TODO: repeat for continue
         # TODO: call pygame.display_update()

@@ -46,7 +46,7 @@ title_rect.center = (WINDOW_WIDTH // 2,
 # TODO: place the topleft of score_rect to an x coordinate of 10 and y coordinate of 10
 
 # TODO: make a game_over_text object and assign a font render to it with text "GAMEOVER", antialias of True, color of RED, background color of DARKRED
-# TODO: make a game_over_rect object by assigning game_over_text.get_rect() to it.
+# TODO: make a game_over_rect object by assigning game_over_    text.get_rect() to it.
 # TODO: place the center of game_over_rect to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT
 
 # TODO: make a continue_text  object and assign a font render to it with text "Press any key to play again", antialias of True, color of RED, background color of DARKGREEN
@@ -118,7 +118,7 @@ while running:
     The blit function for display_surface is for direct blitting.  
     2 ways to do similar things.  Update the display
     1. "Call pygame.draw.rect and passing in display_surface, GREEN, and head_coord for the head of the snake
-    2. "Call pygame.draw.rct again pass in display_surface, RED, and apple_coord for the apple.  
+    2. "Call pygame.draw.rect again pass in display_surface, RED, and apple_coord for the apple.  
     '''
 
     # Update display and tick clock

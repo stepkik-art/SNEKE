@@ -2,7 +2,6 @@ import pygame, random
 
 # Initialize pygame
 pygame.init()
-
 # Set display window
 WINDOW_WIDTH = 600
 WINDOW_HEIGHT = 600
@@ -36,9 +35,10 @@ DARKRED = (150, 0, 0)
 font = pygame.font.SysFont('gabriola', 48)
 
 # Set text
-title_text = font.render("~~Snake~~", True, GREEN, DARKRED) #make a text object
-title_rect = title_text.get_rect() # gets the box containing the text object
-title_rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT//2) # places the box containing the text object's center to the middle of the screen.
+title_text = font.render("~~Snake~~", True, GREEN, DARKRED)  #make a text object
+title_rect = title_text.get_rect()  # gets the box containing the text object
+title_rect.center = (WINDOW_WIDTH // 2,
+                     WINDOW_HEIGHT // 2)  # places the box containing the text object's center to the middle of the screen.
 
 #TODO: make a score_text object and assign a font render to it with text "Score: 0", antialias of True, color of GREEN, background color of DARKRED
 #TODO: make a score_rect object by assigning score_text.get_rect() to it.
@@ -53,7 +53,7 @@ title_rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT//2) # places the box contain
 #TODO: place the center of continue_rect  to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT + 64
 
 # Set sounds and music
-pick_up_sound = pygame.mixer.Sound("pickup_sound.wav")
+pick_up_sound = pygame.mixer.Sound("pick_up_sound.wav")
 
 # Set images (in this case, use simple rects...so just create their coordinates)
 # For a rectangle you need (top-left x, top-left y, width, height)
@@ -95,4 +95,3 @@ while running:
 
 # End the game
 pygame.quit()
-
